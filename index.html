@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Train Station</title>
+
+<div id="header">
+
+	<h1>Train Station</h1>
+
+	<p>Better not miss that train</p>
+
+</div>
+</head>
+
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+
+<script type="text/javascript" src="assets/javascript/javascript.js"></script>
+
+<script type="text/javascript" src="assets/javascript/moment.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<body>
+
+<div class="panel panel-primary">
+
+  <div class="panel-heading">Current Train Schedule</div>
+
+  <table class="table">
+    <thead>
+        <tr>
+          <th>Train Name</th>
+          <th>Destination</th>
+          <th>Frequency</th>
+          <th>Next Arrival</th>
+          <th>Minutes Away</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+          <td>Trenton Express</td>
+          <td>Trenton</td>
+          <td>30</td>
+          <td>3:00 PM</td>
+          <td>10</td>
+        </tr>
+      </tbody>
+  </table>
+</div>
+
+<div class="panel panel-primary" id="addTrain">
+
+  <div class="panel-heading">Add Train</div>
+
+  <div class="panel-body">
+  	<form id="forms">
+  	<div id="name-form">
+  			<label for="name-input">Train Name</label>
+  		<br>
+  			<input id="name-input" type="text">
+  			</div>
+  		<br>
+  	<div id="destination-form">
+  			<label for="destination-input">Destination</label>
+  		<br>
+  			<input id="destination-input" type="text">
+  			</div>
+  		<br>
+  	<div id="time-form">
+  			<label for="time-input">First Train Time (HH:mm - military time)</label>
+  		<br>
+  			<input id="time-input" type="text">
+  			</div>
+  		<br>
+  	<div id="min-form">
+  			<label for="min-input">Frequency (min)</label>
+  		<br>
+  			<input id="min-input" type="text">
+  			</div>
+  		<br>
+  	
+  		<button class="btn btn-default" id="add-train" type="submit">Submit</button>
+
+  		</form>
+
+  	</div>
+
+  </div>
+
+</div>
+
+
+
+</body>
+</html>
